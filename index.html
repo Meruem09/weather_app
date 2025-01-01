@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/4280591.jpg" type="images/jpg">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-switch">
+            <label class="switch-label">
+                <input type="checkbox" class="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="search-bar">
+            <input
+            placeholder="Type something here..."
+            class="input"
+            name="text"
+            type="text"
+            />
+
+            <button id="search" onclick="get_temp()">
+                <img style="height: 40px; width: 37px; " src="images/search_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24 (1).png">
+            </button>
+
+        </div>
+        <div class="content">
+            <img id="weather_icon" style="width: 150px;" src="images/sunny_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" class="weather-icon">
+            <h1 id="temperature">22°C</h1>
+            <h2 id="place">New Delhi</h2>
+            <div class="extras">
+                <div>
+                <p>Humidity</p>
+                <img height="20px" src="images/water_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <p id="humid">110</p>
+                </div>
+
+                <div>
+                <p>Wind</p>
+                <img height="20px" src="images/air_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <p id="speed">45 km/h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"  ></script>
+</body>
+</html>
